@@ -1,51 +1,61 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Architektura___PROJEKT
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        string AX;
-        string BX;
-        string CX;
-        string DX;
 
         public MainWindow()
         {
             InitializeComponent();
             ResetAll();
-
-
         }
 
         private void RandomInput_Click(object sender, RoutedEventArgs e)
         {
-            Random rnd = new Random();
-            INPUT.Text = rnd.Next(100).ToString();
+            //Random rnd = new Random();
+            //INPUT.Text = rnd.Next(100).ToString();        //random decimal number
+
+            Random random = new Random();
+            var bytes0 = new Byte[2];
+            random.NextBytes(bytes0);
+            var hexArray0 = Array.ConvertAll(bytes0, x => x.ToString("X2"));
+            var hexStr0 = String.Concat(hexArray0);
+            INPUT.Text = hexStr0;
         }
 
         private void RandomRegisters_Click(object sender, RoutedEventArgs e)
         {
-            Random rnd = new Random();
-            printAX.Text = rnd.Next(100).ToString();
-            printBX.Text = rnd.Next(100).ToString();
-            printCX.Text = rnd.Next(100).ToString();
-            printDX.Text = rnd.Next(100).ToString();
+            Random random = new Random();
+            var bytes0 = new Byte[2];
+            var bytes1 = new Byte[2];
+            var bytes2 = new Byte[2];
+            var bytes3 = new Byte[2];
+            random.NextBytes(bytes0);
+            random.NextBytes(bytes1);
+            random.NextBytes(bytes2);
+            random.NextBytes(bytes3);
+            var hexArray0 = Array.ConvertAll(bytes0, x => x.ToString("X2"));
+            var hexArray1 = Array.ConvertAll(bytes1, x => x.ToString("X2"));
+            var hexArray2 = Array.ConvertAll(bytes2, x => x.ToString("X2"));
+            var hexArray3 = Array.ConvertAll(bytes3, x => x.ToString("X2"));
+            var hexStr0 = String.Concat(hexArray0);
+            var hexStr1 = String.Concat(hexArray1);
+            var hexStr2 = String.Concat(hexArray2);
+            var hexStr3 = String.Concat(hexArray3);
+
+            printAX.Text = hexStr0;
+            printBX.Text = hexStr1;
+            printCX.Text = hexStr2;
+            printDX.Text = hexStr3;
+
+            //Random rnd = new Random();
+            //printAX.Text = rnd.Next(100).ToString();
+            //printBX.Text = rnd.Next(100).ToString();          //random decimal number
+            //printCX.Text = rnd.Next(100).ToString();
+            //printDX.Text = rnd.Next(100).ToString();
         }
 
         private void Reset_Click(object sender, RoutedEventArgs e)
@@ -61,10 +71,10 @@ namespace Architektura___PROJEKT
             var button = sender as Button;
             var currentNumber = INPUT.Text;
             string qq = button.Name;
-            char[] chars = {'X'};
+            char[] chars = { 'X' };
             string XX = qq.TrimEnd(chars);
 
-            if (XX[XX.Length-1] == 'A')
+            if (XX[XX.Length - 1] == 'A')
             {
                 printAX.Text = currentNumber;
             }
@@ -85,6 +95,42 @@ namespace Architektura___PROJEKT
 
         private void XTOx_Click(object sender, RoutedEventArgs e)
         {
+            string zrodlo = "default";
+            var button = sender as Button;
+            string XX = button.Name;
+            if (XX[XX.Length - 2] == 'A')
+            {
+                zrodlo = printAX.Text;
+            }
+            if (XX[XX.Length - 2] == 'B')
+            {
+                zrodlo = printBX.Text;
+            }
+            if (XX[XX.Length - 2] == 'C')
+            {
+                zrodlo = printCX.Text;
+            }
+            if (XX[XX.Length - 2] == 'D')
+            {
+                zrodlo = printDX.Text;
+            }
+
+            if (XX[XX.Length - 4] == 'A')
+            {
+                printAX.Text = zrodlo;
+            }
+            if (XX[XX.Length - 4] == 'B')
+            {
+                printBX.Text = zrodlo;
+            }
+            if (XX[XX.Length - 4] == 'C')
+            {
+                printCX.Text = zrodlo;
+            }
+            if (XX[XX.Length - 4] == 'D')
+            {
+                printDX.Text = zrodlo;
+            }
 
         }
         private void ResetAll()

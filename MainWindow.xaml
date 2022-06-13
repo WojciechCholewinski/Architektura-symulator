@@ -43,10 +43,10 @@
 
         <TextBlock Grid.Row="1" Grid.Column="0" Text="INPUT " FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" ></TextBlock>
         
-        <TextBlock Grid.Row="9" Grid.Column="0" Text="AX" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
-        <TextBlock Grid.Row="11" Grid.Column="0" Text="BX" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
-        <TextBlock Grid.Row="13" Grid.Column="0" Text="CX" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
-        <TextBlock Grid.Row="15" Grid.Column="0" Text="DX" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+        <TextBlock Grid.Row="9" Grid.Column="0" Text="AX" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+        <TextBlock Grid.Row="11" Grid.Column="0" Text="BX" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+        <TextBlock Grid.Row="13" Grid.Column="0" Text="CX" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
+        <TextBlock Grid.Row="15" Grid.Column="0" Text="DX" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBlock>
 
         <TextBox x:Name="INPUT" Grid.Row="1" Grid.Column="1" TextAlignment="Center"  VerticalContentAlignment="Center" FontSize="18" ></TextBox> 
         
