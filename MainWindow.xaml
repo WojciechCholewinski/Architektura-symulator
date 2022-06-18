@@ -81,6 +81,14 @@
         <TextBlock x:Name="printCX" Grid.Row="13" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" ></TextBlock>
         <TextBlock x:Name="printDX" Grid.Row="15" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" ></TextBlock>
 
+        <Button x:Name="XCHGAXBX" Click="XCHG_Click" Grid.Column="3" Grid.Row="11" Content="XCHG AX BX" FontSize="14"></Button>
+        <Button x:Name="XCHGAXCX" Click="XCHG_Click" Grid.Column="5" Grid.Row="11" Content="XCHG AX CX" FontSize="14"></Button>
+        <Button x:Name="XCHGAXDX" Click="XCHG_Click" Grid.Column="7" Grid.Row="11" Content="XCHG AX DX" FontSize="14"></Button>
+
+        <Button x:Name="XCHGBXCX" Click="XCHG_Click" Grid.Column="3" Grid.Row="13" Content="XCHG BX CX" FontSize="14"></Button>
+        <Button x:Name="XCHGBXDX" Click="XCHG_Click" Grid.Column="5" Grid.Row="13" Content="XCHG BX DX" FontSize="14"></Button>
+        <Button x:Name="XCHGCXDX" Click="XCHG_Click" Grid.Column="7" Grid.Row="13" Content="XCHG CX DX" FontSize="14"></Button>
+
 
     </Grid>
 </Window>

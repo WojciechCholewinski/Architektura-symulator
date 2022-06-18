@@ -28,6 +28,9 @@ namespace Architektura___PROJEKT
 
         private void RandomRegisters_Click(object sender, RoutedEventArgs e)
         {
+            //this.BXAX.Tag = new Action<int>((a) => {
+            //}); 
+
             Random random = new Random();
             var bytes0 = new Byte[2];
             var bytes1 = new Byte[2];
@@ -97,6 +100,12 @@ namespace Architektura___PROJEKT
         {
             string zrodlo = "default";
             var button = sender as Button;
+
+
+            //Action<int> tag = (Action<int>)button.Tag;
+            //tag.Invoke(1);
+
+
             string XX = button.Name;
             if (XX[XX.Length - 2] == 'A')
             {
@@ -141,5 +150,56 @@ namespace Architektura___PROJEKT
             printCX.Text = string.Empty;
             printDX.Text = string.Empty;
         }
+
+        private void XCHG_Click(object sender, RoutedEventArgs e)
+        {
+            string zrodlo = "default";
+            var button = sender as Button;
+            string tmp = "default";
+
+            //Action<int> tag = (Action<int>)button.Tag;
+            //tag.Invoke(1);
+
+
+            string XX = button.Name;
+            if (XX.Contains("AX") && XX.Contains("BX"))
+            {
+                tmp = printAX.Text;
+                printAX.Text = printBX.Text;
+                printBX.Text = tmp;
+            }
+            if (XX.Contains("AX") && XX.Contains("CX"))
+            {
+                tmp = printAX.Text;
+                printAX.Text = printCX.Text;
+                printCX.Text = tmp;
+            }
+            if (XX.Contains("AX") && XX.Contains("DX"))
+            {
+                tmp = printAX.Text;
+                printAX.Text = printDX.Text;
+                printDX.Text = tmp;
+            }
+            if (XX.Contains("BX") && XX.Contains("CX"))
+            {
+                tmp = printBX.Text;
+                printBX.Text = printCX.Text;
+                printCX.Text = tmp;
+            }
+            if (XX.Contains("BX") && XX.Contains("DX"))
+            {
+                tmp = printBX.Text;
+                printBX.Text = printDX.Text;
+                printDX.Text = tmp;
+            }
+            if (XX.Contains("CX") && XX.Contains("DX"))
+            {
+                tmp = printCX.Text;
+                printCX.Text = printDX.Text;
+                printBX.Text = tmp;
+            }
+        }
+
+        
     }
 }
