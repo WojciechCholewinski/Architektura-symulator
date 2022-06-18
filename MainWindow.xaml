@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Architektura___PROJEKT"
         mc:Ignorable="d"
-        Title="MainWindow" MinWidth="720" MinHeight="350" Height="500" Width="800">
+        Title="Symulator Procesora 8086" MinWidth="720" MinHeight="350" Height="500" Width="800">
     <Grid >
 
         <Grid.ColumnDefinitions>

@@ -196,7 +196,7 @@ namespace Architektura___PROJEKT
             {
                 tmp = printCX.Text;
                 printCX.Text = printDX.Text;
-                printBX.Text = tmp;
+                printDX.Text = tmp;
             }
         }
 
