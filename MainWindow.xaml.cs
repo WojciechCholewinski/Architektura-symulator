@@ -153,13 +153,11 @@ namespace Architektura___PROJEKT
 
         private void XCHG_Click(object sender, RoutedEventArgs e)
         {
-            string zrodlo = "default";
             var button = sender as Button;
             string tmp = "default";
 
             //Action<int> tag = (Action<int>)button.Tag;
             //tag.Invoke(1);
-
 
             string XX = button.Name;
             if (XX.Contains("AX") && XX.Contains("BX"))

@@ -59,21 +59,21 @@
         <Button x:Name="InputToCX" Click="InputTo_Click" Grid.Column="7" Grid.Row="1" Content="INPUT TO CX" FontSize="14"></Button>
         <Button x:Name="InputToDX" Click="InputTo_Click" Grid.Column="9" Grid.Row="1" Content="INPUT TO DX" FontSize="14"></Button>
 
-        <Button x:Name="BXAX" Click="XTOx_Click" Grid.Column="3" Grid.Row="3" Content="BX AX" FontSize="14"></Button>
-        <Button x:Name="CXAX" Click="XTOx_Click" Grid.Column="3" Grid.Row="5" Content="CX AX" FontSize="14"></Button>
-        <Button x:Name="DXAX" Click="XTOx_Click" Grid.Column="3" Grid.Row="7" Content="DX AX" FontSize="14"></Button>
+        <Button x:Name="BXAX" Click="XTOx_Click" Grid.Column="3" Grid.Row="3" Content="MOV BX, AX" FontSize="14"></Button>
+        <Button x:Name="CXAX" Click="XTOx_Click" Grid.Column="3" Grid.Row="5" Content="MOV CX, AX" FontSize="14"></Button>
+        <Button x:Name="DXAX" Click="XTOx_Click" Grid.Column="3" Grid.Row="7" Content="MOV DX, AX" FontSize="14"></Button>
 
-        <Button x:Name="AXBX" Click="XTOx_Click" Grid.Column="5" Grid.Row="3" Content="AX BX" FontSize="14"></Button>
-        <Button x:Name="CXBX" Click="XTOx_Click" Grid.Column="5" Grid.Row="5" Content="CX BX" FontSize="14"></Button>
-        <Button x:Name="DXBX" Click="XTOx_Click" Grid.Column="5" Grid.Row="7" Content="DX BX" FontSize="14"></Button>
+        <Button x:Name="AXBX" Click="XTOx_Click" Grid.Column="5" Grid.Row="3" Content="MOV AX, BX" FontSize="14"></Button>
+        <Button x:Name="CXBX" Click="XTOx_Click" Grid.Column="5" Grid.Row="5" Content="MOV CX, BX" FontSize="14"></Button>
+        <Button x:Name="DXBX" Click="XTOx_Click" Grid.Column="5" Grid.Row="7" Content="MOV DX, BX" FontSize="14"></Button>
 
-        <Button x:Name="AXCX" Click="XTOx_Click" Grid.Column="7" Grid.Row="3" Content="AX CX" FontSize="14"></Button>
-        <Button x:Name="BXCX" Click="XTOx_Click" Grid.Column="7" Grid.Row="5" Content="BX CX" FontSize="14"></Button>
-        <Button x:Name="DXCX" Click="XTOx_Click" Grid.Column="7" Grid.Row="7" Content="DX CX" FontSize="14"></Button>
+        <Button x:Name="AXCX" Click="XTOx_Click" Grid.Column="7" Grid.Row="3" Content="MOV AX, CX" FontSize="14"></Button>
+        <Button x:Name="BXCX" Click="XTOx_Click" Grid.Column="7" Grid.Row="5" Content="MOV BX, CX" FontSize="14"></Button>
+        <Button x:Name="DXCX" Click="XTOx_Click" Grid.Column="7" Grid.Row="7" Content="MOV DX, CX" FontSize="14"></Button>
 
-        <Button x:Name="AXDX" Click="XTOx_Click" Grid.Column="9" Grid.Row="3" Content="AX DX" FontSize="14"></Button>
-        <Button x:Name="BXDX" Click="XTOx_Click" Grid.Column="9" Grid.Row="5" Content="BX DX" FontSize="14"></Button>
-        <Button x:Name="CXDX" Click="XTOx_Click" Grid.Column="9" Grid.Row="7" Content="CX DX" FontSize="14"></Button>
+        <Button x:Name="AXDX" Click="XTOx_Click" Grid.Column="9" Grid.Row="3" Content="MOV AX, DX" FontSize="14"></Button>
+        <Button x:Name="BXDX" Click="XTOx_Click" Grid.Column="9" Grid.Row="5" Content="MOV BX, DX" FontSize="14"></Button>
+        <Button x:Name="CXDX" Click="XTOx_Click" Grid.Column="9" Grid.Row="7" Content="MOV CX, DX" FontSize="14"></Button>
 
 
         <TextBlock x:Name="printAX" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" ></TextBlock>
@@ -81,13 +81,13 @@
         <TextBlock x:Name="printCX" Grid.Row="13" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" ></TextBlock>
         <TextBlock x:Name="printDX" Grid.Row="15" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" ></TextBlock>
 
-        <Button x:Name="XCHGAXBX" Click="XCHG_Click" Grid.Column="3" Grid.Row="11" Content="XCHG AX BX" FontSize="14"></Button>
-        <Button x:Name="XCHGAXCX" Click="XCHG_Click" Grid.Column="5" Grid.Row="11" Content="XCHG AX CX" FontSize="14"></Button>
-        <Button x:Name="XCHGAXDX" Click="XCHG_Click" Grid.Column="7" Grid.Row="11" Content="XCHG AX DX" FontSize="14"></Button>
+        <Button x:Name="XCHGAXBX" Click="XCHG_Click" Grid.Column="3" Grid.Row="11" Content="XCHG, AX BX" FontSize="14"></Button>
+        <Button x:Name="XCHGAXCX" Click="XCHG_Click" Grid.Column="5" Grid.Row="11" Content="XCHG, AX CX" FontSize="14"></Button>
+        <Button x:Name="XCHGAXDX" Click="XCHG_Click" Grid.Column="7" Grid.Row="11" Content="XCHG, AX DX" FontSize="14"></Button>
 
-        <Button x:Name="XCHGBXCX" Click="XCHG_Click" Grid.Column="3" Grid.Row="13" Content="XCHG BX CX" FontSize="14"></Button>
-        <Button x:Name="XCHGBXDX" Click="XCHG_Click" Grid.Column="5" Grid.Row="13" Content="XCHG BX DX" FontSize="14"></Button>
-        <Button x:Name="XCHGCXDX" Click="XCHG_Click" Grid.Column="7" Grid.Row="13" Content="XCHG CX DX" FontSize="14"></Button>
+        <Button x:Name="XCHGBXCX" Click="XCHG_Click" Grid.Column="3" Grid.Row="13" Content="XCHG, BX CX" FontSize="14"></Button>
+        <Button x:Name="XCHGBXDX" Click="XCHG_Click" Grid.Column="5" Grid.Row="13" Content="XCHG, BX DX" FontSize="14"></Button>
+        <Button x:Name="XCHGCXDX" Click="XCHG_Click" Grid.Column="7" Grid.Row="13" Content="XCHG, CX DX" FontSize="14"></Button>
 
 
     </Grid>
